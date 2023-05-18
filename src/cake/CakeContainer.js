@@ -4,7 +4,7 @@ import Cake from "./Cake.js";
 const CakeContainer = () => {
 
     const [listOfCakes, setListOfCakes] = useState(
-		[
+		[1
 			{
 				cakeName: "Victoria Sponge",
 				   ingredients: [
@@ -56,8 +56,9 @@ const CakeContainer = () => {
 
   return (
     <>
-
-	{/* <h2> Bakery </h2> */}
+	<Cake cake={listOfCakes[0]} />
+	<Cake cake={listOfCakes[1]} />
+	<Cake cake={listOfCakes[2]} />
      </>
   )
 }
